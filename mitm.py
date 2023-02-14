@@ -3,7 +3,6 @@ from scapy.all import *
 import socket
 import re
 
-
 def print_and_accept(pkt):
     ip = IP(pkt.get_payload())
     if ip.haslayer(Raw):
